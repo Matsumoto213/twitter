@@ -18,7 +18,7 @@ class CreateCommentsTable extends Migration
             $table->unsignedInteger('user_id')->comment('ユーザID');
             $table->unsignedInteger('tweet_id')->comment('ツイートID');
             $table->string('text')->comment('本文');
-            $table->SoftDeletes();
+            $table->softDeletes();
             $table->timestamps();
 
             $table->index('id');
