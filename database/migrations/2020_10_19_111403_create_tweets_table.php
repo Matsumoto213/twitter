@@ -17,7 +17,7 @@ class CreateTweetsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('user_id')->comment('ユーザID');
             $table->string('text')->comment('本文');
-            $table->SoftDeletes();
+            $table->softDeletes();
             $table->timestamps();
 
             $table->index('id');
